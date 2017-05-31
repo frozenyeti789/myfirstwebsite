@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My first web page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <h1>My first web page</h1>
+
+    <h2>What this is</h2>
+    <p> A simple page put together using HTML</p>
+
+    <h2>Why this is</h2>
+    <p>To learn HTML</p>
+
+    <h2>Where to find the tutorial</h2>
+    <p><a href="http://www.htmldog.com">HTML Dog</a></p>
+    <img src="http://www.htmldog.com/badge1.gif" width="120" height="90" alt="HTML Dog">
+
+<table>
+    <thead>
+        <tr>
+            <td>Header 1</td>
+            <td>Header 2</td>
+            <td>Header 3</td>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <td>Footer 1</td>
+            <td>Footer 2</td>
+            <td>Footer 3</td>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+        </tr>
+        <!-- etc. -->
+    </tbody>
+</table>
+
+<form action="contactus.php" method="post">
+
+    <p>Name:</p>
+    <p><input type="text" name="name" value="Your name"></p>
+
+    <p>Species:</p>
+    <p><input name="species"></p>
+    <!-- remember: 'type="text"' isn't actually necessary -->
+
+    <p>Comments: </p>
+    <p><textarea name="comments" rows="5" cols="20">Your comments</textarea></p>
+
+    <p>Are you:</p>
+    <p><input type="radio" name="areyou" value="male"> Male</p>
+    <p><input type="radio" name="areyou" value="female"> Female</p>
+    <p><input type="radio" name="areyou" value="hermaphrodite"> An hermaphrodite</p>
+    <p><input type="radio" name="areyou" value="asexual"> Asexual</p>
+
+    <p><input type="submit"></p>
+
+</form>
+
+<h1>Some random glossary thing</h1>
+<dl>
+    <dt>HTML</dt>
+    <dd>Abbreviation for HyperText Markup Language - a language used to make web pages.</dd>
+
+    <dt>Dog</dt>
+    <dd>Any carnivorous animal belonging to the family Canidae.</dd>
+    <dd>The domesticated sub-species of the family Canidae, Canis lupus familiaris.</dd>
+
+    <dt>Moo juice</dt>
+    <dt>Cat beer</dt>
+    <dt>Milk</dt>
+    <dd>A white liquid produced by cows and used for human consumption.</dd>
+</dl>
+
+
+<p>Bob's <dfn title="Dog">canine</dfn> mother and <dfn title="Horse">equine</dfn> father sat him down and carefully explained that he was an <dfn title="A mutation that combines two or more sets of chromosomes from different species">allopolyploid</dfn> organism.</p>
+
+<bdo dir="rtl">god lmth</bdo>
+
+
+
+<p>I have decided to <del datetime="2013-01-26">decrease</del> <ins cite="http://www.icecreamforall.com/changeofpolicy/">increase</ins> the amount of free ice cream that the State will provide for its citizens.</p>
+
+<p>It really was <del cite="onsecondthoughts.html" datetime="2003-10-25">very</del> good.</p>
+
+<del cite="onsecondthoughts.html" datetime="2003-10-25">
+    <h2>This was, like, WOW, dude. Really.</h2>
+    <p>I feel compelled to go into more detail on just how wow this was.</p>
+    <!-- rambling long paragraphs -->
+</del>
+
+
+
+<h3>Author contact details</h3>
+<address>
+<ul>
+    <li>0123-456-7890</li>
+    <li>author_dude@noplaceinteresting.com</li>
+    <li>http://www.noplaceinteresting.com/contactme/</li>
+</ul>
+</address>
+
+
+
+<nav id="main_nav">
+    <ul>
+        <li><a href="/tutorials/">Tutorials</a></li>
+        <li><a href="/techniques/">Techniques</a></li>
+        <li><a href="/examples/">Examples</a></li>
+        <li><a href="/references/">References</a></li>
+    </ul>
+</nav>
+
+
+
+<form action="somescript.php" >
+    <fieldset>
+        <legend>Name</legend>
+        <p>First name <input name="firstName"></p>
+        <p>Last name <input name="lastName"></p>
+    </fieldset>
+    <fieldset>
+        <legend>Address</legend>
+        <p>Address <textarea name="address"></textarea></p>
+        <p>Postal code <input name="postcode"></p>
+    </fieldset>
+    <!-- etc. -->
+
+<input name="country" list="country_name">
+
+<select name="country">
+    <optgroup label="Africa">
+        <option value="gam">Gambia</option>
+        <option value="mad">Madagascar</option>
+        <option value="nam">Namibia</option>
+    </optgroup>
+    <optgroup label="Europe">
+        <option value="fra">France</option>
+        <option value="rus">Russia</option>
+        <option value="uk">UK</option>
+    </optgroup>
+    <optgroup label="North America">
+        <option value="can">Canada</option>
+        <option value="mex">Mexico</option>
+        <option value="usa">USA</option>
+    </optgroup>
+</select>
+
+
+<input name="country" list="country_name">
+
+<datalist id="country_name">
+    <option value="Afghanistan">
+    <option value="Albania">
+    <option value="Algeria">
+    <option value="Andorra">
+    <option value="Armenia">
+    <option value="Australia">
+    <option value="Austria">
+    <option value="Azerbaijan">
+    <!-- etc. -->
+</datalist>
+
+
+<audio src="meow_mix.mp3" controls>
+    Your stupid browser doesn't support HTML 5 audio.
+</audio>
+
+<canvas id="wittykitty" width="800" height="450">
+    <!-- Fall-back content here, just like with video and audio -->
+</canvas>
+
+<ul id="genus_examples">
+    <li>Cats
+        <ul>
+            <li>Panthera</li>
+            <li>Felis</li>
+            <li>Neofelis</li>
+        </ul>
+    </li>
+    <li>Apes
+        <ul>
+            <li>Pongo</li>
+            <li>Pan</li>
+            <li>Homo</li>
+        </ul>
+    </li>
+</ul>
+
+</body>
+
+</html>
